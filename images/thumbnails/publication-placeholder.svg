@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">Publication thumbnail placeholder</title>
+  <desc id="desc">Abstract gradient background with a stylized shutter icon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f3b73" />
+      <stop offset="100%" stop-color="#3f9bd9" />
+    </linearGradient>
+  </defs>
+  <rect width="360" height="240" fill="url(#bg)" rx="18" />
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.6">
+    <circle cx="180" cy="120" r="72" />
+    <path d="M180 36v60" />
+    <path d="M180 144v60" />
+    <path d="M96 120h60" />
+    <path d="M204 120h60" />
+    <path d="M132 60l42 42" />
+    <path d="M186 174l42 42" />
+  </g>
+  <text x="180" y="206" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="32" fill="#ffffff" opacity="0.85">
+    Research Preview
+  </text>
+</svg>

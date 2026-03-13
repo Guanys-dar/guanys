@@ -121,12 +121,12 @@ a:hover { color: #f09228; }
 }
 
 .entry-icon {
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
-  border-radius: 6px;
-  margin-top: 2px;
+  border-radius: 4px;
+  margin-top: 1px;
 }
 
 .entry-content {

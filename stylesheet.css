@@ -114,7 +114,24 @@ a:hover { color: #f09228; }
 
 /* ── Experience & Education entries ── */
 .entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
   margin-bottom: 16px;
+}
+
+.entry-icon {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-top: 2px;
+}
+
+.entry-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .entry-header {

@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>关源伸 | Yuanshen Guan</title>
+  <meta name="author" content="Yuanshen Guan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Hero -->
+    <header class="hero">
+      <img class="hero-photo" src="images/me.JPG" alt="关源伸">
+      <div class="hero-info">
+        <h1 class="hero-name">关源伸</h1>
+        <p class="hero-bio">
+          中国科学技术大学信息与通信工程专业博士生，导师为熊志伟教授。曾在快手可灵 AI 团队与华为诺亚方舟实验室实习。
+        </p>
+        <p class="hero-bio">
+          研究方向为生成模型对齐，包括物理信号对齐（动态范围、无限视场角）、人类偏好对齐（测试时扩散强化学习）与事实推理对齐（长视频理解智能体系统）。
+        </p>
+        <div class="hero-links">
+          <a href="mailto:guanys@mail.ustc.edu.cn">邮箱</a>
+          <a href="%E7%AE%80%E5%8E%86-%E5%85%B3%E6%BA%90%E4%BC%B8.pdf">简历</a>
+          <a href="https://github.com/Guanys-dar">GitHub</a>
+          <a href="index.html">English</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">教育经历</h2>
+      <div class="entry">
+        <img class="entry-icon" src="images/icon/ustc.png" alt="USTC">
+        <div class="entry-content">
+          <div class="entry-header">
+            <span class="entry-org">中国科学技术大学</span>
+            <span class="entry-date">2022 – 2027（预计）</span>
+          </div>
+          <div class="entry-role">信息与通信工程博士研究生（导师：熊志伟教授）</div>
+          <div class="entry-detail">国家奖学金、深圳证券交易所奖学金</div>
+        </div>
+      </div>
+      <div class="entry">
+        <img class="entry-icon" src="images/icon/neu.png" alt="NEU">
+        <div class="entry-content">
+          <div class="entry-header">
+            <span class="entry-org">东北大学</span>
+            <span class="entry-date">2018 – 2022</span>
+          </div>
+          <div class="entry-role">自动化专业工学学士</div>
+          <div class="entry-detail">国家奖学金、一等学业奖学金</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section">
+      <h2 class="section-title">实习经历</h2>
+      <div class="entry">
+        <img class="entry-icon" src="images/icon/kling.webp" alt="Kling AI">
+        <div class="entry-content">
+          <div class="entry-header">
+            <span class="entry-org">快手科技（可灵 AI）</span>
+            <span class="entry-date">2025.12 – 至今</span>
+          </div>
+          <div class="entry-role">研究型实习生</div>
+          <div class="entry-detail">测试时扩散偏好对齐（ICLR 在投）；长视频理解智能体（ECCV 2026 已接收）</div>
+        </div>
+      </div>
+      <div class="entry">
+        <img class="entry-icon" src="images/icon/huawei.jpeg" alt="Huawei">
+        <div class="entry-content">
+          <div class="entry-header">
+            <span class="entry-org">华为诺亚方舟实验室</span>
+            <span class="entry-date">2025.07 – 2025.11</span>
+          </div>
+          <div class="entry-role">研究型实习生</div>
+          <div class="entry-detail">端侧高分辨率图像处理系统，已落地产品并获批专利一项</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section">
+      <h2 class="section-title">论文发表</h2>
+
+      <div class="pub-group">偏好对齐</div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">预印本（在投）</span>
+          <div class="pub-title">Test-Time Preference Alignment with Diffusion Reward Registers</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, et al.</div>
+          <p class="pub-desc">
+            发现向 DiT 中插入 register tokens 可提取有效的潜在奖励，且在高噪声区域信号依然可靠；据此实现推理阶段的奖励梯度引导采样，零训练完成测试时偏好对齐。在
+            SD3-Medium 上显著超过 Flow-GRPO、DiffusionNFT 等训练类方法，且无 reward hacking、多样性无损。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">事实对齐</div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">ECCV 2026</span>
+          <div class="pub-title">Reflect-R1: Evidence-Driven Reflection for Self-Correction in Long Video Understanding</div>
+          <div class="pub-authors">S. Chen, Y. Chen*, <strong>Y. Guan*</strong>, Z. Cheng, Z. Zhang, S. Qin, B. Xia, J. Li, W. Yang, F. Ma</div>
+          <p class="pub-desc">
+            提出面向长视频理解的证据驱动自纠错框架；动态视觉证据检索可打破幻觉的自我强化循环，并通过阶段解耦 GRPO 解决长轨迹的信用分配问题，在 VideoMME 和
+            LongVideoBench 上取得 SOTA 性能。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">物理对齐 &middot; 生成</div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">ACM TOG</span>
+          <div class="pub-title">Versatile HDR Video Generation</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, P. Liu, J. Xia, S. Sun, Y. Li, Z. Liang, R. Xu, C. Chen, D. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            提出一种 HDR 视频生成范式，将内容生成与动态范围扩展解耦，通过共享早期生成轨迹实现严格时空对齐，利用 token 级缓存获得 3
+            倍加速，并在无需额外优化的情况下统一多种视频生成任务。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">ICCV 2025</span>
+          <div class="pub-title">HDR Image Generation via Gain Map Decomposed Diffusion</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, Y. Liao, M. Yao, L. Wang, Z. Xiong</div>
+          <p class="pub-desc">
+            提出基于 Gain Map 分解扩散的文本到 HDR 图像生成模型；兼容 ControlNet 与主流 Stable Diffusion 插件，并支持 4K SDR 到 HDR 的生成式转换。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">ICLR 2026</span>
+          <div class="pub-title">Arbitrary-Shaped Image Generation via Spherical Neural Field Diffusion</div>
+          <div class="pub-authors">J. Xia, <strong>Y. Guan</strong>, R. Xu, Z. Xiong</div>
+          <p class="pub-desc">
+            提出结合潜在采样的球面扩散模型，以显式控制视角、视场角和分辨率；统一透视图、全景图和鱼眼图像合成，并提升纹理细节与几何一致性。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">预印本</span>
+          <div class="pub-title">Pano-OPSD: Scaling Panorama Generation via On-Policy Self-Distillation</div>
+          <div class="pub-authors">J. Xia, <strong>Y. Guan</strong>, R. Xu, Z. Xiong</div>
+          <p class="pub-desc">
+            旨在利用大规模文本-图像数据扩展全景图生成能力。方法通过扩展 OPSD，以透视图像条件增强全景生成器并构建
+            Self-teacher，将大规模文本-图像数据中的丰富语义与复杂视觉纹理迁移至全景生成。四步生成质量已超过五十步生成质量，Scaling 实验正在进行中。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">物理对齐 &middot; 恢复</div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">CVPR 2026</span>
+          <div class="pub-title">FastGaMer: Efficient GainMap Learning for Practical Inverse Tone Mapping</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, C. Chen, Y. Liao, D. Song, F. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            提出基于彩色 Gain Map 的结构化逆色调映射框架，用于联合恢复动态范围与广色域；动态双边网格和可学习 3D LUT 分别反演局部与全局退化，在 4K 分辨率下达到
+            6.2 ms 推理速度，并带来 +1.4 dB PQ-PSNR 提升。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card highlight">
+        <div class="pub-body">
+          <span class="pub-venue">ACM MM 2023</span>
+          <div class="pub-title">Mutual-Guided Dynamic Network for Image Fusion</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, M. Yao, L. Wang, Z. Xiong</div>
+          <p class="pub-desc">
+            在统一的图像融合框架中结合动态卷积与互信息约束，在多焦点、多曝光、RGB-红外、RGB-深度以及 HDR 去鬼影等基准上取得 SOTA 结果。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">ICLR 2025</span>
+          <div class="pub-title">Learning Gain Map for Inverse Tone Mapping</div>
+          <div class="pub-authors">Y. Liao, <strong>Y. Guan</strong>, R. Xu, J. Li, S. Sun, Z. Xiong</div>
+          <p class="pub-desc">
+            提出首个直接学习 Gain Map 的逆色调映射模型；构建合成与真实数据集，并实现最高 +2.7 dB PSNR 提升。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">ACM TOMM</span>
+          <div class="pub-title">EdiTor: Edge-guided Transformer for Ghost-free HDR Imaging</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, M. Yao, J. Huang, Z. Xiong</div>
+          <p class="pub-desc">
+            利用图像梯度作为光照不变线索来引导 Transformer 自注意力机制，使跨曝光对应关系具备鲁棒性且无鬼影，并在三个公开基准测试上取得了最先进的定量与感知
+            HDR 结果。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">更多论文</div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">CVPR 2026</span>
+          <div class="pub-title">RawMetaDiff: Unlocking Extreme Darkness from Dual-Exposure RAW with Meta-Guided Diffusion</div>
+          <div class="pub-authors">P. Liu, J. Xia*, <strong>Y. Guan</strong>, Y. Li, Z. Lang, R. Xu, C. Chen, D. Song, F. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            提出以 Raw 元数据为引导的双曝光极暗光 Raw 图像修复生成式扩散框架：Meta-Assistant Color Transfer 保证全局色彩一致性，Meta-Normed Cross
+            Attention 建立鲁棒的跨曝光对应，实现高保真细节恢复与色彩保持；在合成数据与新采集的 1K 真实双曝光数据集上均显著优于现有方法。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">ECCV 2024 Workshop</span>
+          <div class="pub-title">Diffusion-Promoted HDR Video Reconstruction</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, M. Yao, R. Gao, L. Wang, Z. Xiong</div>
+          <p class="pub-desc">
+            研究扩散先验在 HDR 视频重建中的应用，将含噪或运动模糊帧视为分布外样本进行针对性精修，LPIPS 最高提升 15%，并获得更好的时序一致性。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">IEEE TCI</span>
+          <div class="pub-title">Learning Continuous Degradation for Arbitrary-Scale Blind Super-Resolution</div>
+          <div class="pub-authors">J. Xia, <strong>Y. Guan</strong>, R. Xu, J. Li, M. Yao, Z. Xiong</div>
+          <p class="pub-desc">
+            将退化建模为连续潜在轨迹，使单一网络可处理任意放大倍率，并在未知模糊与噪声条件下恢复清晰细节。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">IEEE TCI</span>
+          <div class="pub-title">Learning Piece-wise Planar Representation for Guided Depth Super-Resolution</div>
+          <div class="pub-authors">R. Xu, M. Yao, <strong>Y. Guan</strong>, Z. Xiong</div>
+          <p class="pub-desc">
+            学习分段平面表示以引导深度超分辨率，保持几何边界并抑制纹理复制伪影。
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-body">
+          <span class="pub-venue">IEEE TIP</span>
+          <div class="pub-title">Neural Degradation Representation Learning for All-In-One Image Restoration</div>
+          <div class="pub-authors">M. Yao, R. Xu, <strong>Y. Guan</strong>, J. Huang, Z. Xiong</div>
+          <p class="pub-desc">
+            学习共享的退化感知先验，使单一模型即可适应多种噪声、模糊与压缩场景，实现一体化图像恢复，并具备优秀的定量与视觉质量。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source -->
+    <section class="section">
+      <h2 class="section-title">开源项目</h2>
+      <div class="pub-card">
+        <img class="pub-thumb" src="images/icon/github-mark.png" alt="multi-agent-collab">
+        <div class="pub-body">
+          <div class="pub-title"><a href="https://github.com/Guanys-dar/multi-agent-collab">multi-agent-collab</a></div>
+          <p class="pub-desc">
+            一个面向 Claude Code、Codex 和 Gemini CLI 等 AI 编程智能体的文件式协作协议。该协议使用 Markdown
+            文件实现意图锁定、结构化交接和人工把关的交叉评审，无需额外基础设施。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards -->
+    <section class="section">
+      <h2 class="section-title">荣誉奖项</h2>
+      <ul class="awards-list">
+        <li>研究生国家奖学金 – 2024</li>
+        <li>本科生国家奖学金 – 2020</li>
+        <li>一等学业奖学金 – 2019, 2021, 2022, 2023, 2024</li>
+        <li>雅思 7.0，GRE 325（数学 170，语文 155）</li>
+        <li>中国国际“互联网+”大学生创新创业大赛全国铜奖 – 2021</li>
+        <li>中国大学生计算机设计大赛全国一等奖 – 2021</li>
+        <li>UG2+ 挑战赛第 4 名（大气湍流）– 2023</li>
+        <li>MIPI 挑战赛第 4 名（RGBW 融合与去噪）– 2022</li>
+        <li>美国大学生数学建模竞赛（MCM）荣誉提名 – 2021</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+
+</html>

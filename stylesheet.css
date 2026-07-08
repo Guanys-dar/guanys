@@ -200,6 +200,16 @@ a:hover { color: #f09228; }
 
 .pub-body { flex: 1; min-width: 0; }
 
+.pub-group {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1772d0;
+  letter-spacing: 0.3px;
+  margin: 26px 0 12px;
+}
+
+.pub-group:first-of-type { margin-top: 0; }
+
 .pub-venue {
   display: inline-block;
   font-size: 11px;

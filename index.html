@@ -94,39 +94,25 @@
     <section class="section">
       <h2 class="section-title">Publications</h2>
 
+      <div class="pub-group">Preference Alignment</div>
+
       <div class="pub-card highlight">
-        <img class="pub-thumb" src="images/thumbnails/iclr26_GMLUT.png" alt="Thumbnail for FastGaMer">
+        <img class="pub-thumb" src="images/thumbnails/publication-placeholder.svg" alt="Thumbnail for Test-Time Preference Alignment with Diffusion Reward Registers">
         <div class="pub-body">
-          <span class="pub-venue">CVPR 2026</span>
-          <div class="pub-title">FastGaMer: Efficient GainMap Learning for Practical Inverse Tone Mapping</div>
-          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, C. Chen, Y. Liao, D. Song, F. Song, Z. Xiong</div>
+          <span class="pub-venue">Preprint (Under Review)</span>
+          <div class="pub-title">Test-Time Preference Alignment with Diffusion Reward Registers</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, et al.</div>
           <p class="pub-desc">
-            We introduce FastGaMer, a structured inverse tone mapping framework that reconstructs per-channel
-            color gain maps to jointly restore compressed dynamic range and wide color gamut from locally
-            tone-mapped SDR inputs. Local and global degradations are inverted separately via dynamic bilateral
-            grids and learnable 3D LUTs, with all high-resolution operations being network-free. FastGaMer
-            outperforms prior lightweight ITM methods by +1.4 dB PQ-PSNR while reducing runtime by 70%,
-            processing 4K images in only 6.2 ms.
+            We discover that inserting register tokens into a diffusion transformer extracts a reliable
+            latent reward whose signal remains robust even at high noise levels. This enables reward-gradient
+            guided sampling at inference time, achieving training-free test-time preference alignment.
+            On SD3-Medium, our method significantly outperforms training-based approaches such as Flow-GRPO
+            and DiffusionNFT, with no reward hacking and no loss of generation diversity.
           </p>
         </div>
       </div>
 
-      <div class="pub-card">
-        <img class="pub-thumb" src="images/thumbnails/raw-meta-diff-figure.png" alt="Thumbnail for RawMetaDiff">
-        <div class="pub-body">
-          <span class="pub-venue">CVPR 2026</span>
-          <div class="pub-title">RawMetaDiff: Unlocking Extreme Darkness from Dual-Exposure RAW with Meta-Guided Diffusion</div>
-          <div class="pub-authors">P. Liu, J. Xia*, <strong>Y. Guan</strong>, Y. Li, Z. Lang, R. Xu, C. Chen, D. Song, F. Song, Z. Xiong</div>
-          <p class="pub-desc">
-            We propose RawMetaDiff, a generative diffusion framework for extreme low-light Raw image restoration
-            from dual-exposure inputs guided by Raw metadata. Two complementary mechanisms&mdash;Meta-Assistant
-            Color Transfer for global color consistency and Meta-Normed Cross Attention for robust
-            cross-exposure correspondence&mdash;enable high-fidelity detail recovery and color preservation.
-            Extensive experiments on both synthetic and a newly collected 1K real-world dual-exposure dataset
-            demonstrate significant improvements over existing methods.
-          </p>
-        </div>
-      </div>
+      <div class="pub-group">Factual Alignment</div>
 
       <div class="pub-card highlight">
         <img class="pub-thumb" src="images/thumbnails/reflect-r1-figure.png" alt="Thumbnail for Reflect-R1">
@@ -141,6 +127,23 @@
             reinforcement learning algorithm (SD-GRPO) independently computes advantage functions across
             reasoning stages to resolve policy coupling. Experiments on VideoMME and LongVideoBench
             demonstrate state-of-the-art performance with significantly improved genuine rectification rates.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">Physical Alignment &middot; Generation</div>
+
+      <div class="pub-card highlight">
+        <img class="pub-thumb" src="images/thumbnails/publication-placeholder.svg" alt="Thumbnail for Versatile HDR Video Generation">
+        <div class="pub-body">
+          <span class="pub-venue">ACM TOG</span>
+          <div class="pub-title">Versatile HDR Video Generation</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, P. Liu, J. Xia, S. Sun, Y. Li, Z. Liang, R. Xu, C. Chen, D. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            We present an HDR video generation paradigm that decouples content generation from dynamic
+            range expansion. Sharing early generation trajectories enforces strict spatio-temporal
+            alignment, token-level caching delivers a 3&times; speedup, and multiple video generation
+            tasks are unified without any additional optimization.
           </p>
         </div>
       </div>
@@ -174,6 +177,41 @@
       </div>
 
       <div class="pub-card">
+        <img class="pub-thumb" src="images/thumbnails/publication-placeholder.svg" alt="Thumbnail for Pano-OPSD">
+        <div class="pub-body">
+          <span class="pub-venue">Preprint</span>
+          <div class="pub-title">Pano-OPSD: Scaling Panorama Generation via On-Policy Self-Distillation</div>
+          <div class="pub-authors">J. Xia, <strong>Y. Guan</strong>, R. Xu, Z. Xiong</div>
+          <p class="pub-desc">
+            We scale panorama generation with large-scale text-image data by extending on-policy
+            self-distillation: a perspective-image-conditioned panorama generator serves as its own teacher,
+            transferring rich semantics and complex visual textures from web-scale text-image data to
+            panorama generation. Four-step generation already surpasses fifty-step quality, with scaling
+            experiments ongoing.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">Physical Alignment &middot; Restoration</div>
+
+      <div class="pub-card highlight">
+        <img class="pub-thumb" src="images/thumbnails/iclr26_GMLUT.png" alt="Thumbnail for FastGaMer">
+        <div class="pub-body">
+          <span class="pub-venue">CVPR 2026</span>
+          <div class="pub-title">FastGaMer: Efficient GainMap Learning for Practical Inverse Tone Mapping</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, C. Chen, Y. Liao, D. Song, F. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            We introduce FastGaMer, a structured inverse tone mapping framework that reconstructs per-channel
+            color gain maps to jointly restore compressed dynamic range and wide color gamut from locally
+            tone-mapped SDR inputs. Local and global degradations are inverted separately via dynamic bilateral
+            grids and learnable 3D LUTs, with all high-resolution operations being network-free. FastGaMer
+            outperforms prior lightweight ITM methods by +1.4 dB PQ-PSNR while reducing runtime by 70%,
+            processing 4K images in only 6.2 ms.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
         <img class="pub-thumb" src="images/thumbnails/iclr25_gmnet.png" alt="Thumbnail for Learning Gain Map for Inverse Tone Mapping">
         <div class="pub-body">
           <span class="pub-venue">ICLR 2025</span>
@@ -183,20 +221,6 @@
             We present the first inverse tone mapping model that directly learns gain maps, together with
             synthetic and real benchmark datasets, demonstrating gains of up to 2.7 dB PSNR over previous
             inverse tone mapping networks.
-          </p>
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <img class="pub-thumb" src="images/thumbnails/ijcv_hdrdiff.png" alt="Thumbnail for Diffusion-Promoted HDR Video Reconstruction">
-        <div class="pub-body">
-          <span class="pub-venue">ECCV 2024 Workshop</span>
-          <div class="pub-title">Diffusion-Promoted HDR Video Reconstruction</div>
-          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, M. Yao, R. Gao, L. Wang, Z. Xiong</div>
-          <p class="pub-desc">
-            We investigate diffusion priors for HDR video reconstruction, treating noisy or motion-blurred
-            frames as out-of-distribution samples for targeted refinement, and achieve up to 15% LPIPS
-            improvements with cleaner temporal consistency.
           </p>
         </div>
       </div>
@@ -225,6 +249,39 @@
             We use image gradients as illumination-invariant cues to guide transformer self-attention,
             making cross-exposure correspondence robust and ghost-free, and deliver state-of-the-art
             quantitative and perceptual HDR results on three public benchmarks.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">More Publications</div>
+
+      <div class="pub-card">
+        <img class="pub-thumb" src="images/thumbnails/raw-meta-diff-figure.png" alt="Thumbnail for RawMetaDiff">
+        <div class="pub-body">
+          <span class="pub-venue">CVPR 2026</span>
+          <div class="pub-title">RawMetaDiff: Unlocking Extreme Darkness from Dual-Exposure RAW with Meta-Guided Diffusion</div>
+          <div class="pub-authors">P. Liu, J. Xia*, <strong>Y. Guan</strong>, Y. Li, Z. Lang, R. Xu, C. Chen, D. Song, F. Song, Z. Xiong</div>
+          <p class="pub-desc">
+            We propose RawMetaDiff, a generative diffusion framework for extreme low-light Raw image restoration
+            from dual-exposure inputs guided by Raw metadata. Two complementary mechanisms&mdash;Meta-Assistant
+            Color Transfer for global color consistency and Meta-Normed Cross Attention for robust
+            cross-exposure correspondence&mdash;enable high-fidelity detail recovery and color preservation.
+            Extensive experiments on both synthetic and a newly collected 1K real-world dual-exposure dataset
+            demonstrate significant improvements over existing methods.
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <img class="pub-thumb" src="images/thumbnails/ijcv_hdrdiff.png" alt="Thumbnail for Diffusion-Promoted HDR Video Reconstruction">
+        <div class="pub-body">
+          <span class="pub-venue">ECCV 2024 Workshop</span>
+          <div class="pub-title">Diffusion-Promoted HDR Video Reconstruction</div>
+          <div class="pub-authors"><strong>Y. Guan</strong>, R. Xu, M. Yao, R. Gao, L. Wang, Z. Xiong</div>
+          <p class="pub-desc">
+            We investigate diffusion priors for HDR video reconstruction, treating noisy or motion-blurred
+            frames as out-of-distribution samples for targeted refinement, and achieve up to 15% LPIPS
+            improvements with cleaner temporal consistency.
           </p>
         </div>
       </div>

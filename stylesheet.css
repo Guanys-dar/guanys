@@ -201,11 +201,12 @@ a:hover { color: #f09228; }
 .pub-body { flex: 1; min-width: 0; }
 
 .pub-group {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
-  color: #1772d0;
-  letter-spacing: 0.3px;
-  margin: 26px 0 12px;
+  color: #8a939c;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 28px 0 12px;
 }
 
 .pub-group:first-of-type { margin-top: 0; }
